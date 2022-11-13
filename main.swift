@@ -1,16 +1,22 @@
-func getName () { 
+func getName () -> String { 
     print("Hello, What is your name?")
     //let name: String
-    if let name = readLine(){
-        print(name)
-    }    
+    if let name = readLine() {
+     return name
+       
+    } 
+    else {
+          return "nil"
+   
+    }
+  
 }
+
+ // var userName: String
+
+ 
+
 /*
- var userName: String
- userName = getName()
- print("userName: \(userName)")
-
-
  func greeting (userName: String) { 
      
     print("\(userName) are you feeling happy, sad, frustrated or blah?")
@@ -45,8 +51,11 @@ if (emotion == "frustrated") {
 }
 */
 
-getName()
-//print(getName())
+// var result = getName()
+// print(result)
+
+ let userName = getName()
+ print("userName: \(userName)")
 
 
   
